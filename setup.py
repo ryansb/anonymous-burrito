@@ -26,7 +26,7 @@ setup(name='rsbns',
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    install_requires=['cornice', 'PasteScript', 'waitress'],
+    install_requires=['cornice', 'PasteScript', 'gunicorn'],
     entry_points = """\
     [paste.app_factory]
     main = rsbns:main
