@@ -26,7 +26,13 @@ setup(name='anon_burrito',
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    install_requires=['cornice', 'PasteScript', 'gunicorn'],
+    install_requires=[
+        'cornice',
+        'PasteScript',
+        'gunicorn',
+        'easyzone',
+        'dnspython',
+    ],
     entry_points = """\
     [paste.app_factory]
     main = anon_burrito:main
