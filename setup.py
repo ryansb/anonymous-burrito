@@ -9,9 +9,9 @@ with open(os.path.join(here, 'README.rst')) as f:
     README = f.read()
 
 
-setup(name='rsbns',
+setup(name='anon_burrito',
     version=0.1,
-    description='rsbns',
+    description='anon_burrito',
     long_description=README,
     classifiers=[
         "Programming Language :: Python",
@@ -29,7 +29,7 @@ setup(name='rsbns',
     install_requires=['cornice', 'PasteScript', 'gunicorn'],
     entry_points = """\
     [paste.app_factory]
-    main = rsbns:main
+    main = anon_burrito:main
     """,
     paster_plugins=['pyramid'],
 )
